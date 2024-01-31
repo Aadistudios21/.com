@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+    *{
+      margin: 0px;
+    }
+    header{
+      background-color: yellow;
+    }
+    #search_bar{
+      height: 29px;
+      width: 300px;
+      margin-top: 9px;
+      margin-left: 7px;
+      border-radius: 10px;
+    }
+    #mainpro{
+      margin-top: 2px;
+      height: 190px;
+      display: grid;
+    }
+    .options{
+      margin: 10px;
+      height: 60px;
+      background-color: red;
+    }
+    .userscontainer{
+      background-color: lightgray;
+    }
+    h4{
+      font-family: Sans-Serif;
+      text-align: center;
+    }
+    #users{
+      background-color: red;
+      margin: 10px;
+      width: 50px;
+    }
+    #bussiness{
+      background-color: red;
+      margin: 10px;
+      width: 50px;
+    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+    *{
+      margin: 0px;
+    }
+    header{
+      background-color: yellow;
+    }
+    #search_bar{
+      height: 29px;
+      width: 300px;
+      margin-top: 9px;
+      margin-left: 7px;
+      border-radius: 10px;
+    }
+    #mainpro{
+      margin-top: 2px;
+      height: 190px;
+      display: grid;
+    }
+    .options{
+      margin: 10px;
+      height: 60px;
+      background-color: red;
+    }
+    .userscontainer{
+      background-color: lightgray;
+    }
+    h4{
+      font-family: Sans-Serif;
+      text-align: center;
+    }
+    #users{
+      background-color: red;
+      margin: 10px;
+      width: 50px;
+    }
+    #bussiness{
+      background-color: red;
+      margin: 10px;
+      width: 50px;
+    }
+    #balance{
+      text-decoration: none;
+      color: lightgray;
+      margin-left: 100px;
+    }
+    footer{
+      background-color: gray;
+      height: 100px;
+    }
+    </style>
+</head>
+<body>
+  <header>
+    <input type="text" id="search_bar" placeholder="search people/ contact "></input>
+    <img src="" alt="profile" id="profile_img">
+  <div id="mainpro">
+    <img src="" alt="mainpro">
+  </div>
+  </header>
+  <div id="options">
+    <img class="options" src="" onclick="openCamera()"alt="scanner">
+    <img class="options" src="" alt="money transfer">
+    <img class="options"  src="" alt="self">
+    <img class="options"  src="" alt="upi">
+  </div>
+  <h4>Users</h4>
+  <div class="userscontainer">
+    <div id="users">
+      <img src="" alt="user image">
+      <p>username</p>
+    </div>
+  </div>
+  <h4>BUSINESSES</h4>
+  <div class="userscontainer">
+    <div id="bussiness">
+      <img src="" alt="bimg">
+      <p>businessname</p>
+    </div>
+  </div>
+  <div>
+    <a  id="balance" href="www.google.com" onclick="alert('Blance : 100₹')"> check your walltet balance</a>
+  </div>
+  <footer>
+<div>
+  <select>
+    <option class="modes" value="lightmode">light mode </option>
+    <option class="modes" value="darkmode">dark mode</option>
+  </select>
+</div>
+
+  </footer>
+  <script>
+  function openCamera() {
+  // Check if the browser supports the MediaDevices API
+  if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    // Open the device camera
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(function(stream) {
+        // Do something with the camera stream, e.g., display it in a video element
+        var videoElement = document.createElement('video');
+        videoElement.srcObject = stream;
+        videoElement.play();
+        document.body.appendChild(videoElement);
+      })
+      .catch(function(error) {
+        console.error('Error accessing camera:', error);
+      });
+  } else {
+    alert('Camera access is not supported on this browser.');
+  }
+}
+var mode = document.getElementByClassName('modes')
+var modies = mode.value
+if(mode == "lightmode") {
+  
+}
+</script>
+</body>
+</html>￼Enter    #balance{
+      text-decoration: none;
+      color: lightgray;
+      margin-left: 100px;
+    }
+    footer{
+      background-color: gray;
+      height: 100px;
+    }
+    </style>
+</head>
+<body>
+  <header>
+    <input type="text" id="search_bar" placeholder="search people/ contact "></input>
+    <img src="" alt="profile" id="profile_img">
+  <div id="mainpro">
+    <img src="" alt="mainpro">
+  </div>
+  </header>
+  <div id="options">
+    <img class="options" src="" onclick="openCamera()"alt="scanner">
+    <img class="options" src="" alt="money transfer">
+    <img class="options"  src="" alt="self">
+    <img class="options"  src="" alt="upi">
+  </div>
+  <h4>Users</h4>
+ class="userscontainer">
+    <div id="users">
+      <img src="" alt="user image">
+      <p>username</p>
+    </div>
+  </div>
+  <h4>BUSINESSES</h4>
+  <div class="userscontainer">
+    <div id="bussiness">
+      <img src="" alt="bimg">
+      <p>businessname</p>
+    </div>
+  </div>
+  <div>
+    <a  id="balance" href="www.google.com" onclick="alert('Blance : 100₹')"> check your walltet balance</a>
+  </div>
+  <footer>
+<div>
+  <select>
+    <option class="modes" value="lightmode">light mode </option>
+    <option class="modes" value="darkmode">dark mode</option>
+  </select>
+</div>
+
+  </footer>
+  <script>
